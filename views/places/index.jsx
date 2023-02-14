@@ -13,7 +13,9 @@ function index (data) {
           <p className="text-center">
             Located in {place.city}, {place.state}
           </p>
+        
         </div>
+        
       )
     })
     return (
