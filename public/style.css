@@ -43,3 +43,9 @@ main {
     margin-left: 20px;
     background-color: white;
 }
+.placeInfo{
+    color: rgb(221, 148, 160);
+}
+#comments{
+    color: rgb(221, 148, 160);
+}
