@@ -7,7 +7,7 @@ function home () {
             <main>
                 <h1>REST-Rant</h1>
                 <div>
-                    <img src="/images/fancy-food-plate.jpg" alt="A Fancy Plate of Food" width="600" height="600" />
+                    <img className="homeImage" src="/images/fancy-food-plate.jpg" alt="A Fancy Plate of Food"  />
                     <div>
                     Photo by <a href="https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jay Wennington</a> on <a href="https://unsplash.com/photos/N_Y88TWmGwA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
