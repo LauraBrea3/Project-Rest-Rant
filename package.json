@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/LauraBrea3/Project-Rest-Rant/issues"
   },
-  "homepage": "https://github.com/LauraBrea3/Project-Rest-Rant#readme"
+  "homepage": "https://github.com/LauraBrea3/Project-Rest-Rant#readme",
+  "devDependencies": {}
 }
