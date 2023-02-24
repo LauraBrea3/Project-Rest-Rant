@@ -6,7 +6,7 @@ const placeSchema = new mongoose.Schema({
     },
     pic: { 
         type: String, 
-        default: 'https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+        default: 'https://place-puppy.com/400x450'
     },
     cuisines: { 
         type: String, 
@@ -20,7 +20,11 @@ const placeSchema = new mongoose.Schema({
         type: String, 
         default: 'USA' 
     },
-    founded: Number
+    founded: {
+        type: Number,
+        min: [1673, 'Surely not that old?!'],
+        max: [new Date().getFullYear(), 'Hey, this year is in the future!']
+    }
 })
 
 placeSchema.methods.showEstablished = function() {
