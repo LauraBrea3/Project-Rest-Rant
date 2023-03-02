@@ -2,6 +2,7 @@ h1 {
     text-align: center;
     color:cornflowerblue;
 }
+
 .homeImage {
     width:50%;
     display: block;
@@ -47,5 +48,11 @@ main {
     color: rgb(221, 148, 160);
 }
 #comments{
+    color: rgb(221, 148, 160);
+}
+.col-sm{
+    display: flex;
+}
+.rating{
     color: rgb(221, 148, 160);
 }

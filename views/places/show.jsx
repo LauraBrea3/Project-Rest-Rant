@@ -34,7 +34,7 @@ function show (data) {
                     <h3>
                         <strong>- {c.author}</strong>
                     </h3>
-                    <h4>Rating: {c.stars}</h4>
+                    <h4 className="rating">Rating: {c.stars}</h4>
                 </div>
             )
         })
@@ -51,7 +51,7 @@ function show (data) {
                     </div>
                     <div id="placeInfo" className="col-sm-6">
                         <h1>{ data.place.name }</h1>
-                        <h2>
+                        <h2 className="rating">
                             Rating
                         </h2>
                         <p>{rating}</p>
@@ -63,19 +63,23 @@ function show (data) {
                         <h4>
                         Serving {data.place.cuisines}
                         </h4>
-                            <a href={`/places/${data.id}/edit`} className="btn btn-warning">Edit</a>
-                        <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+                            <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">Edit</a>
+                        <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
                             <button type="submit" className="btn btn-danger">Delete</button>
                         </form>
                     </div>
                 </div>
                 <hr/>
-                <div  className="row">
-                    <h2 id="comments">Comments</h2>
-                    <p>{comments}</p>
+                <div className="container">
+                    <div  className="row">
+                        <h2 id="comments">Comments</h2>
+                        <div className="col-sm">
+                            {comments}
+                        </div>
+                    </div>
                 </div>
                 <hr/>
-                <h2>Got Your Own Rant or Rave?</h2>
+                <h2 id="comments">Got Your Own Rant or Rave?</h2>
                 <form action={`/places/${data.place.id}/comment`} method="POST">
                     <div className="row">
                         <div className="form-group col-sm-12">
